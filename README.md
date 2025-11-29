@@ -18,7 +18,7 @@ Agents authenticate with a simple session ID. The gateway manages all OAuth toke
 
 ## Features
 
-- **Credential Vault** — Securely stores and manages API tokens for external services
+- **Credential Vault** — Securely stores API tokens encrypted at rest with AES-256-GCM
 - **Automatic Token Refresh** — Refreshes OAuth tokens before they expire
 - **Rate Limiting** — Sliding window rate limits per agent and per service
 - **Access Control** — Service-level permissions for each agent
@@ -27,7 +27,7 @@ Agents authenticate with a simple session ID. The gateway manages all OAuth toke
 
 ## Tech Stack
 
-Rust, Axum, Tokio, OAuth2
+Rust, Axum, Tokio, OAuth2, AES-256-GCM
 
 ## Quick Start
 

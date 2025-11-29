@@ -26,7 +26,7 @@
 ### Security Modules
 | Feature | Status | Notes |
 |---------|--------|-------|
-| AES-256-GCM encryption | ✅ Module ready | Not yet integrated into storage |
+| AES-256-GCM encryption | ✅ Integrated | Credentials encrypted at rest |
 | Rate limiter | ✅ Working | In-memory sliding window |
 | Session management | ✅ Working | File-based persistence |
 
@@ -34,7 +34,6 @@
 
 | Feature | Status | Notes |
 |---------|--------|-------|
-| Credential encryption | ⚠️ | Module exists, not integrated |
 | Audit logging | ⚠️ | Model exists, not integrated into proxy |
 | OAuth2 token refresh | ⚠️ | Simulated (extends expiry) |
 
@@ -51,11 +50,12 @@
 ## Test Coverage
 
 ```
-24 tests passing
-├── Unit tests: 14
+28 tests passing
+├── Unit tests: 18
 │   ├── Rate limiter: 2
 │   ├── Token refresh: 4
-│   └── Encryption: 1 (x2 lib/bin)
+│   ├── Encryption: 1
+│   └── Credential encryption: 2 (x2 lib/bin)
 ├── Integration tests: 10
 │   ├── Gateway tests: 7
 │   └── User tests: 3

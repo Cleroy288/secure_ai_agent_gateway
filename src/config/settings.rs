@@ -6,11 +6,10 @@ pub struct Settings {
     pub host: String,
     pub port: u16,
 
-    // Security (for future encryption integration)
-    #[allow(dead_code)]
+    // Security
     pub encryption_key: String,
     #[allow(dead_code)]
-    pub session_secret: String,
+    pub session_secret: String,  // For future JWT sessions
 
     // Session management
     pub session_ttl_secs: u64,

@@ -1,25 +1,7 @@
 {
   "agents": [
     {
-      "id": "4880740a-8102-4b4e-963b-6b5371d83a49",
-      "name": "Test HTTPBin Agent",
-      "description": "Agent for testing proxy",
-      "allowed_services": [
-        "httpbin"
-      ],
-      "scopes": [],
-      "rate_limit": {
-        "requests": 100,
-        "window_secs": 60
-      },
-      "ip_allowlist": null,
-      "expires_at": "2025-12-29T16:22:55.791272Z",
-      "lifespan_days": 30,
-      "created_at": "2025-11-29T16:22:55.791272Z",
-      "updated_at": "2025-11-29T16:22:55.791272Z"
-    },
-    {
-      "id": "18e0d950-a7e4-4cb7-a4b8-1bc1bf806217",
+      "id": "37009874-a834-4ced-ad89-ee0bd7053362",
       "name": "Test Agent",
       "description": "A test AI agent",
       "allowed_services": [
@@ -32,29 +14,10 @@
         "window_secs": 60
       },
       "ip_allowlist": null,
-      "expires_at": "2025-12-29T15:21:18.523253Z",
+      "expires_at": "2025-12-29T16:57:29.986596Z",
       "lifespan_days": 30,
-      "created_at": "2025-11-29T15:21:18.523253Z",
-      "updated_at": "2025-11-29T15:21:18.523253Z"
-    },
-    {
-      "id": "133554b4-6437-4dcb-89bd-bb76b588b419",
-      "name": "Test Agent",
-      "description": "A test AI agent",
-      "allowed_services": [
-        "payment",
-        "bank"
-      ],
-      "scopes": [],
-      "rate_limit": {
-        "requests": 100,
-        "window_secs": 60
-      },
-      "ip_allowlist": null,
-      "expires_at": "2025-12-29T15:39:43.453827Z",
-      "lifespan_days": 30,
-      "created_at": "2025-11-29T15:39:43.453827Z",
-      "updated_at": "2025-11-29T15:39:43.453827Z"
+      "created_at": "2025-11-29T16:57:29.986596Z",
+      "updated_at": "2025-11-29T16:57:29.986596Z"
     },
     {
       "id": "c083b923-e99f-4b7a-b2e6-f4f6d3e41794",
@@ -76,7 +39,7 @@
       "updated_at": "2025-11-29T16:17:52.496165Z"
     },
     {
-      "id": "c4dd3675-ddd5-4b7b-a473-7450e9773527",
+      "id": "18e0d950-a7e4-4cb7-a4b8-1bc1bf806217",
       "name": "Test Agent",
       "description": "A test AI agent",
       "allowed_services": [
@@ -89,10 +52,66 @@
         "window_secs": 60
       },
       "ip_allowlist": null,
-      "expires_at": "2025-12-29T16:42:36.258436Z",
+      "expires_at": "2025-12-29T15:21:18.523253Z",
       "lifespan_days": 30,
-      "created_at": "2025-11-29T16:42:36.258436Z",
-      "updated_at": "2025-11-29T16:42:36.258436Z"
+      "created_at": "2025-11-29T15:21:18.523253Z",
+      "updated_at": "2025-11-29T15:21:18.523253Z"
+    },
+    {
+      "id": "4880740a-8102-4b4e-963b-6b5371d83a49",
+      "name": "Test HTTPBin Agent",
+      "description": "Agent for testing proxy",
+      "allowed_services": [
+        "httpbin"
+      ],
+      "scopes": [],
+      "rate_limit": {
+        "requests": 100,
+        "window_secs": 60
+      },
+      "ip_allowlist": null,
+      "expires_at": "2025-12-29T16:22:55.791272Z",
+      "lifespan_days": 30,
+      "created_at": "2025-11-29T16:22:55.791272Z",
+      "updated_at": "2025-11-29T16:22:55.791272Z"
+    },
+    {
+      "id": "622f0911-09ad-4603-beeb-ec60a7f95354",
+      "name": "Test Agent",
+      "description": "A test AI agent",
+      "allowed_services": [
+        "payment",
+        "bank"
+      ],
+      "scopes": [],
+      "rate_limit": {
+        "requests": 100,
+        "window_secs": 60
+      },
+      "ip_allowlist": null,
+      "expires_at": "2025-12-29T16:58:16.410223Z",
+      "lifespan_days": 30,
+      "created_at": "2025-11-29T16:58:16.410223Z",
+      "updated_at": "2025-11-29T16:58:16.410223Z"
+    },
+    {
+      "id": "133554b4-6437-4dcb-89bd-bb76b588b419",
+      "name": "Test Agent",
+      "description": "A test AI agent",
+      "allowed_services": [
+        "payment",
+        "bank"
+      ],
+      "scopes": [],
+      "rate_limit": {
+        "requests": 100,
+        "window_secs": 60
+      },
+      "ip_allowlist": null,
+      "expires_at": "2025-12-29T15:39:43.453827Z",
+      "lifespan_days": 30,
+      "created_at": "2025-11-29T15:39:43.453827Z",
+      "updated_at": "2025-11-29T15:39:43.453827Z"
     },
     {
       "id": "f2bfc908-bbb5-4c07-a175-6452b227e221",
@@ -112,22 +131,34 @@
       "lifespan_days": 30,
       "created_at": "2025-11-29T16:38:08.743740Z",
       "updated_at": "2025-11-29T16:38:08.743740Z"
+    },
+    {
+      "id": "c4dd3675-ddd5-4b7b-a473-7450e9773527",
+      "name": "Test Agent",
+      "description": "A test AI agent",
+      "allowed_services": [
+        "payment",
+        "bank"
+      ],
+      "scopes": [],
+      "rate_limit": {
+        "requests": 100,
+        "window_secs": 60
+      },
+      "ip_allowlist": null,
+      "expires_at": "2025-12-29T16:42:36.258436Z",
+      "lifespan_days": 30,
+      "created_at": "2025-11-29T16:42:36.258436Z",
+      "updated_at": "2025-11-29T16:42:36.258436Z"
     }
   ],
   "sessions": [
     {
-      "session_id": "bc5f7a15-2353-4867-a346-d334a89a09a2",
-      "agent_id": "133554b4-6437-4dcb-89bd-bb76b588b419",
-      "created_at": "2025-11-29T15:39:43.454394Z",
-      "expires_at": "2025-11-29T16:39:43.454394Z",
-      "last_used_at": "2025-11-29T15:39:43.454394Z"
-    },
-    {
-      "session_id": "f488c169-b5ec-4ce1-b7a6-48c9a395868c",
-      "agent_id": "f2bfc908-bbb5-4c07-a175-6452b227e221",
-      "created_at": "2025-11-29T16:38:08.744285Z",
-      "expires_at": "2025-11-29T17:38:08.744285Z",
-      "last_used_at": "2025-11-29T16:38:08.744285Z"
+      "session_id": "3187ecfc-ef7d-4a85-9f8f-7ba0c1a2e596",
+      "agent_id": "622f0911-09ad-4603-beeb-ec60a7f95354",
+      "created_at": "2025-11-29T16:58:16.411352Z",
+      "expires_at": "2025-11-29T17:58:16.411352Z",
+      "last_used_at": "2025-11-29T16:58:16.411352Z"
     },
     {
       "session_id": "243891e0-6b1f-4def-aff5-1159cf268f8a",
@@ -137,11 +168,25 @@
       "last_used_at": "2025-11-29T16:22:55.791872Z"
     },
     {
-      "session_id": "10aedc12-5657-447b-a933-89d89d9762c1",
-      "agent_id": "c083b923-e99f-4b7a-b2e6-f4f6d3e41794",
-      "created_at": "2025-11-29T16:17:52.496442Z",
-      "expires_at": "2025-11-29T17:17:52.496442Z",
-      "last_used_at": "2025-11-29T16:17:52.496442Z"
+      "session_id": "66629f02-9593-44b8-802c-4a54ebb9c41e",
+      "agent_id": "37009874-a834-4ced-ad89-ee0bd7053362",
+      "created_at": "2025-11-29T16:57:29.987461Z",
+      "expires_at": "2025-11-29T17:57:29.987461Z",
+      "last_used_at": "2025-11-29T16:57:29.987461Z"
+    },
+    {
+      "session_id": "807f535e-ca24-4aaa-b37d-a5851bdcdae1",
+      "agent_id": "18e0d950-a7e4-4cb7-a4b8-1bc1bf806217",
+      "created_at": "2025-11-29T15:21:18.524066Z",
+      "expires_at": "2025-11-29T16:21:18.524066Z",
+      "last_used_at": "2025-11-29T15:21:18.524066Z"
+    },
+    {
+      "session_id": "f488c169-b5ec-4ce1-b7a6-48c9a395868c",
+      "agent_id": "f2bfc908-bbb5-4c07-a175-6452b227e221",
+      "created_at": "2025-11-29T16:38:08.744285Z",
+      "expires_at": "2025-11-29T17:38:08.744285Z",
+      "last_used_at": "2025-11-29T16:38:08.744285Z"
     },
     {
       "session_id": "42715cf8-ec76-4426-92e3-cd9572ce3e8a",
@@ -151,11 +196,18 @@
       "last_used_at": "2025-11-29T16:42:36.258955Z"
     },
     {
-      "session_id": "807f535e-ca24-4aaa-b37d-a5851bdcdae1",
-      "agent_id": "18e0d950-a7e4-4cb7-a4b8-1bc1bf806217",
-      "created_at": "2025-11-29T15:21:18.524066Z",
-      "expires_at": "2025-11-29T16:21:18.524066Z",
-      "last_used_at": "2025-11-29T15:21:18.524066Z"
+      "session_id": "10aedc12-5657-447b-a933-89d89d9762c1",
+      "agent_id": "c083b923-e99f-4b7a-b2e6-f4f6d3e41794",
+      "created_at": "2025-11-29T16:17:52.496442Z",
+      "expires_at": "2025-11-29T17:17:52.496442Z",
+      "last_used_at": "2025-11-29T16:17:52.496442Z"
+    },
+    {
+      "session_id": "bc5f7a15-2353-4867-a346-d334a89a09a2",
+      "agent_id": "133554b4-6437-4dcb-89bd-bb76b588b419",
+      "created_at": "2025-11-29T15:39:43.454394Z",
+      "expires_at": "2025-11-29T16:39:43.454394Z",
+      "last_used_at": "2025-11-29T15:39:43.454394Z"
     }
   ]
 }

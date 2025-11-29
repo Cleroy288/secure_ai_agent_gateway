@@ -1,4 +1,4 @@
-// === AES-GCM encryption for credential storage ===
+// === AES-256-GCM encryption for credential storage ===
 
 use aes_gcm::{
     aead::{Aead, KeyInit},
@@ -9,11 +9,10 @@ use rand::Rng;
 
 use crate::error::GatewayError;
 
-#[allow(dead_code)]
 const NONCE_SIZE: usize = 12;
 
-/// Encrypt plaintext using AES-256-GCM (for future credential encryption)
-#[allow(dead_code, deprecated)]
+/// Encrypt plaintext using AES-256-GCM
+#[allow(deprecated)]
 pub fn encrypt(plaintext: &str, key: &str) -> Result<String, GatewayError> {
     let key_bytes = derive_key(key);
     let cipher = Aes256Gcm::new_from_slice(&key_bytes)
@@ -34,8 +33,8 @@ pub fn encrypt(plaintext: &str, key: &str) -> Result<String, GatewayError> {
     Ok(STANDARD.encode(result))
 }
 
-/// Decrypt ciphertext using AES-256-GCM (for future credential encryption)
-#[allow(dead_code, deprecated)]
+/// Decrypt ciphertext using AES-256-GCM
+#[allow(deprecated)]
 pub fn decrypt(encrypted: &str, key: &str) -> Result<String, GatewayError> {
     let key_bytes = derive_key(key);
     let cipher = Aes256Gcm::new_from_slice(&key_bytes)
@@ -60,8 +59,8 @@ pub fn decrypt(encrypted: &str, key: &str) -> Result<String, GatewayError> {
         .map_err(|e| GatewayError::Internal(format!("UTF-8 decode failed: {}", e)))
 }
 
-/// Derive 32-byte key from password
-#[allow(dead_code)]
+/// Derive 32-byte key from password using simple padding
+/// Note: In production, use a proper KDF like Argon2 or PBKDF2
 fn derive_key(password: &str) -> [u8; 32] {
     let mut key = [0u8; 32];
     let bytes = password.as_bytes();

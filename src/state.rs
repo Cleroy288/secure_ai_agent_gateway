@@ -18,7 +18,10 @@ pub struct AppState {
 impl AppState {
     pub fn new(settings: Settings) -> Result<Self, GatewayError> {
         let services = ServiceRegistry::load_from_file(&settings.services_config_path)?;
-        let credentials = CredentialManager::load_from_file(&settings.credentials_path)?;
+        let credentials = CredentialManager::load_from_file(
+            &settings.credentials_path,
+            &settings.encryption_key,
+        )?;
         let users = UserStore::load_from_file("data/users.json")?;
         let agents = AgentStore::load_from_file("data/agents.json")?;
         let rate_limiter = RateLimiter::new();
