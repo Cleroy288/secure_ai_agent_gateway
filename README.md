@@ -4,7 +4,6 @@ A credential vault and proxy gateway built in Rust that enables AI agents to sec
 
 ![Rust](https://img.shields.io/badge/Rust-1.70+-orange?logo=rust)
 ![Axum](https://img.shields.io/badge/Axum-0.7-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Overview
 
@@ -109,16 +108,16 @@ The gateway automatically injects credentials and forwards the request.
 
 ## API Reference
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/auth/register` | POST | Register a new user |
-| `/auth/agent` | POST | Create access key with service permissions |
-| `/auth/agent/{id}` | GET | Get access key info |
-| `/auth/agent/{id}/rotate` | POST | Rotate access key |
-| `/auth/agent/{id}/services` | POST | Grant service access |
-| `/auth/agent/{id}/services/{svc}` | DELETE | Revoke service access |
-| `/auth/services` | GET | List available services |
-| `/api/{service}/{path}` | ANY | Proxy request to external service |
+| Endpoint                          | Method | Description                                |
+| --------------------------------- | ------ | ------------------------------------------ |
+| `/auth/register`                  | POST   | Register a new user                        |
+| `/auth/agent`                     | POST   | Create access key with service permissions |
+| `/auth/agent/{id}`                | GET    | Get access key info                        |
+| `/auth/agent/{id}/rotate`         | POST   | Rotate access key                          |
+| `/auth/agent/{id}/services`       | POST   | Grant service access                       |
+| `/auth/agent/{id}/services/{svc}` | DELETE | Revoke service access                      |
+| `/auth/services`                  | GET    | List available services                    |
+| `/api/{service}/{path}`           | ANY    | Proxy request to external service          |
 
 See [API Reference](doc/API_REFERENCE.md) for detailed documentation.
 
@@ -166,10 +165,6 @@ cargo test -- --nocapture
 - [ ] Replay protection
 - [ ] Database storage (SQLite/Postgres)
 - [ ] Admin dashboard
-
-## License
-
-MIT License - see [LICENSE](LICENSE) for details.
 
 ## Contributing
 
