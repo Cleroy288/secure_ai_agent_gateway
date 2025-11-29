@@ -1,0 +1,78 @@
+{
+  "services": [
+    {
+      "id": "payment",
+      "name": "Payment Service",
+      "description": "Payment processing API for transactions",
+      "base_url": "https://api.payment-service.com/v1",
+      "auth_type": "bearer_token",
+      "endpoints": [
+        {
+          "path": "/transactions",
+          "methods": ["GET", "POST"],
+          "required_scopes": ["transactions:read", "transactions:write"]
+        },
+        {
+          "path": "/balance",
+          "methods": ["GET"],
+          "required_scopes": ["balance:read"]
+        }
+      ],
+      "rate_limit": {
+        "requests": 100,
+        "window_secs": 60
+      }
+    },
+    {
+      "id": "bank",
+      "name": "Bank Service",
+      "description": "Banking API for account operations",
+      "base_url": "https://api.bank-service.com/v2",
+      "auth_type": "bearer_token",
+      "endpoints": [
+        {
+          "path": "/accounts",
+          "methods": ["GET"],
+          "required_scopes": ["accounts:read"]
+        },
+        {
+          "path": "/transfers",
+          "methods": ["POST"],
+          "required_scopes": ["transfers:write"]
+        }
+      ],
+      "rate_limit": {
+        "requests": 50,
+        "window_secs": 60
+      }
+    },
+    {
+      "id": "httpbin",
+      "name": "HTTPBin Test Service",
+      "description": "Public test API for verifying proxy functionality",
+      "base_url": "https://httpbin.org",
+      "auth_type": "bearer_token",
+      "endpoints": [
+        {
+          "path": "/get",
+          "methods": ["GET"],
+          "required_scopes": []
+        },
+        {
+          "path": "/post",
+          "methods": ["POST"],
+          "required_scopes": []
+        },
+        {
+          "path": "/headers",
+          "methods": ["GET"],
+          "required_scopes": []
+        }
+      ],
+      "rate_limit": {
+        "requests": 100,
+        "window_secs": 60
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "id": "349facaf-935c-40e7-93de-33edd562a2c8",
+      "username": "testuser2",
+      "email": "test2@example.com",
+      "agents": [
+        "4880740a-8102-4b4e-963b-6b5371d83a49"
+      ],
+      "created_at": "2025-11-29T16:22:20.433132Z",
+      "updated_at": "2025-11-29T16:22:55.791516Z"
+    },
+    {
+      "id": "18a6662f-266c-4ed6-a5a7-e323c54f17b7",
+      "username": "agentowner",
+      "email": "test-4bcbd68e-726d-46b9-9626-72fd4a8ad5cc@example.com",
+      "agents": [
+        "c4dd3675-ddd5-4b7b-a473-7450e9773527"
+      ],
+      "created_at": "2025-11-29T16:42:36.257972Z",
+      "updated_at": "2025-11-29T16:42:36.258826Z"
+    },
+    {
+      "id": "cfda97be-2878-4a4e-aa30-766e5e72b806",
+      "username": "agentowner",
+      "email": "owner@example.com",
+      "agents": [
+        "18e0d950-a7e4-4cb7-a4b8-1bc1bf806217"
+      ],
+      "created_at": "2025-11-29T15:21:18.522710Z",
+      "updated_at": "2025-11-29T15:21:18.523985Z"
+    },
+    {
+      "id": "80ffee94-dc26-4b3f-b33d-ad1f2f117452",
+      "username": "agentowner",
+      "email": "test-5247a3af-094f-4900-970e-2ffca3c1a370@example.com",
+      "agents": [
+        "133554b4-6437-4dcb-89bd-bb76b588b419"
+      ],
+      "created_at": "2025-11-29T15:39:43.453473Z",
+      "updated_at": "2025-11-29T15:39:43.454176Z"
+    },
+    {
+      "id": "f5a7eb8a-122b-4773-8b16-872062dfcdd7",
+      "username": "agentowner",
+      "email": "test-91730177-873a-49a9-9caa-281699833307@example.com",
+      "agents": [
+        "f2bfc908-bbb5-4c07-a175-6452b227e221"
+      ],
+      "created_at": "2025-11-29T16:38:08.743352Z",
+      "updated_at": "2025-11-29T16:38:08.744104Z"
+    },
+    {
+      "id": "a54add96-7b60-4cff-bb0e-e72e8fd96322",
+      "username": "agentowner",
+      "email": "test-c4fcb0be-eab7-4fbe-8125-aaf87083d03c@example.com",
+      "agents": [
+        "c083b923-e99f-4b7a-b2e6-f4f6d3e41794"
+      ],
+      "created_at": "2025-11-29T16:17:52.495681Z",
+      "updated_at": "2025-11-29T16:17:52.496335Z"
+    },
+    {
+      "id": "4fbb144e-fa2f-4214-8143-3c8f6e905f66",
+      "username": "testuser",
+      "email": "test@example.com",
+      "agents": [],
+      "created_at": "2025-11-29T15:38:29.965573Z",
+      "updated_at": "2025-11-29T15:38:29.965573Z"
+    }
+  ]
+}
