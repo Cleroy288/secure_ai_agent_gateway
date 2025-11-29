@@ -27,7 +27,7 @@ Agents authenticate with a simple session ID. The gateway manages all OAuth toke
 
 ## Tech Stack
 
-Rust, Axum, Tokio, OAuth2, AES-256-GCM
+Rust, Axum, Tokio, OAuth2
 
 ## Quick Start
 
